@@ -1,0 +1,18 @@
+create table UserInfo (
+EmployeeId varchar2(6) primary key,
+FirstName varchar2(10) not null,
+LastName varchar2(10) not null,
+Age int not null,
+Gender varchar2(6) not null,
+ContactNumber varchar2(10) not null,
+EmailId varchar2(20) not null,
+Password varchar2(8) not null,
+Branch varchar2(5) not null);
+
+create table VehicleInfo (
+VehicleNo varchar2(10) primary key,
+Branch varchar2(5) not null,
+VehicleType varchar2(5) not null,
+InsuranceExpiryDate date,
+LastServicedDate date,
+ServiceDueDate date);
